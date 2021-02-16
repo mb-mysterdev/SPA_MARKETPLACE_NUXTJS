@@ -1,10 +1,12 @@
 <template>
-  <div>test</div>
+  <navbar-front></navbar-front>
 </template>
 
 <script>
+import NavbarFront from "@/components/front-office/global/NavbarFront";
 export default {
-name: "AppFront"
+name: "AppFront",
+  components: {NavbarFront}
 }
 </script>
 
