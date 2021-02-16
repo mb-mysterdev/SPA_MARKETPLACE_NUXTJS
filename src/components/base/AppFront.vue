@@ -1,5 +1,5 @@
 <template>
-  <navbar-front></navbar-front>
+  <navbar-front class="mb-5"></navbar-front>
 </template>
 
 <script>

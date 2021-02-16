@@ -48,24 +48,6 @@
         </v-dialog>
 
       </v-toolbar>
-
-      <v-container fluid>
-        <v-slide-y-transition mode="out-in">
-          <v-layout column align-center>
-            <h1 class="display-1">Vuetify Desktop / Mobile navbar example</h1>
-            <p>
-              A quick demo of how to combine a desktop navigation and a
-              mobile overlay (dialog) navigation menu.
-            </p>
-            <p>
-              Resize the window to see the navbar change to mobile version.
-            </p>
-            <p>
-              My deep gratitude towards the VueJS and Vuetify team!
-            </p>
-          </v-layout>
-        </v-slide-y-transition>
-      </v-container>
     </v-layout>
   </div>
 </template>
