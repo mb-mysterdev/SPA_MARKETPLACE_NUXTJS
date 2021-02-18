@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import HomeFront from "@/views/front-office/HomeFront.vue";
-import ProductListFront from "@/views/front-office/ProductListFront.vue";
+import ProductListFrontComponent from "@/components/front-office/Product/ProductListFrontComponent.vue";
+import ProductFrontComponent from "@/components/front-office/Product/ProductFrontComponent.vue";
+import HomeFrontComponent from "@/components/front-office/Home/HomeFrontComponent.vue";
 
 Vue.use(VueRouter)
 
@@ -9,12 +10,17 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'HomeFront',
-    component: HomeFront
+    component: HomeFrontComponent
   },
   {
     path: '/list-product',
-    name: 'ProductListFront',
-    component: ProductListFront
+    name: 'ProductListFrontComponent',
+    component: ProductListFrontComponent
+  },
+  {
+    path: '/product/:id',
+    name: 'ProductFrontComponent',
+    component: ProductFrontComponent
   },
 ]
 

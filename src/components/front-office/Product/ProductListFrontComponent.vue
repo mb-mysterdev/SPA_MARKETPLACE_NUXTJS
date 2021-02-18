@@ -54,7 +54,6 @@
 
     <v-card-text>
       <v-chip-group
-          v-model="selection"
           active-class="deep-purple accent-4 white--text"
           column
       >
@@ -70,11 +69,11 @@
 
     <v-card-actions>
       <v-btn
+          :href="'/product/' + card.id"
           color="deep-purple lighten-2"
           text
-          @click="reserve"
       >
-        Reserve
+        Voir le produit
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -94,7 +93,6 @@ name: "ProductListFrontComponent",
         {id: 4},
         {id: 5},
         {id: 6}
-
       ],
     }
   },
